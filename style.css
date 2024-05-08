@@ -6,6 +6,7 @@
 body{
     background-color: #1C2D3C;
     color: white;
+    font-family: "Rubik", sans-serif;
 }
 
 .container{
@@ -31,12 +32,22 @@ body{
     
 }
 .card{
+    max-width: 100%;
     border-radius: 5px;
     background-color: #112030;
     padding: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all 300ms ease-in;
+}
+.card:hover{
+   background-color: #1c334b;
 }
 img{
     max-width: 140px;
+}
+h5{
+    margin-top: 8px;
 }
