@@ -5,6 +5,8 @@ createApp({
         return {
             message: 'Hello Vue!',
             content: [],
+            musicObject: {},
+            modal: false,
         }
     },
     methods:{
@@ -13,6 +15,14 @@ createApp({
                 console.log(res.data);
                 this.content = res.data;
             })
+        },
+        visible(element){
+             return this.musicObject= element, this.modal = true;
+             
+
+        },
+        close(){
+            return this.modal = false;
         }
     },
     created(){
