@@ -25,7 +25,7 @@
                 <div v-for="music in content" class="col-4">
                     <div class="card">
                         <img :src="music.poster" alt="">
-                        <h5><strong>{{music.title}}</strong></h5>
+                        <h5 class="title"><strong>{{music.title}}</strong></h5>
                         <div>{{music.author}}</div>
                         <h4>{{music.year}}</h4>
                     </div>
